@@ -16,6 +16,9 @@ class GameConsumer(AsyncWebsocketConsumer):
         )
         
         await self.accept()
+        
+        # Send player list immediately on connect
+        await self.notify_player_joined()
 
     async def disconnect(self, close_code):
         # Leave room group

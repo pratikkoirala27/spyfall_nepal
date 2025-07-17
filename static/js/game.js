@@ -12,7 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 updatePlayerList(data.players);
                 break;
             case 'game_started':
-                // Already handled by redirect in lobby
+                // Update location for non-spy players
+                if (!document.getElementById('player-is-spy').value) {
+                    document.getElementById('location').textContent = data.location;
+                }
+                updatePlayerList(data.players);
                 break;
         }
     };
@@ -32,7 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
         players.forEach(player => {
             const item = document.createElement('li');
             item.className = 'list-group-item';
-            item.innerHTML = `${player.name} - ${player.is_spy ? 'Spy' : player.role}`;
+            if (player.is_spy) {
+                item.innerHTML = `${player.name} - <span class="text-danger">Spy</span>`;
+            } else {
+                item.innerHTML = `${player.name} - ${player.role}`;
+            }
             playerList.appendChild(item);
         });
     }
@@ -50,4 +58,11 @@ document.addEventListener('DOMContentLoaded', function() {
             messageInput.value = '';
         }
     });
+    
+    // Request initial player list
+    socket.onopen = function() {
+        socket.send(JSON.stringify({
+            type: 'player_joined'
+        }));
+    };
 });

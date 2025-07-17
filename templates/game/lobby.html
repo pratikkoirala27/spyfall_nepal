@@ -52,6 +52,13 @@
             type: 'player_joined'
         }));
     };
+    
+    // Periodically update player list
+    setInterval(() => {
+        socket.send(JSON.stringify({
+            type: 'player_joined'
+        }));
+    }, 5000);
 </script>
 {% endblock %}
 {% endblock %}

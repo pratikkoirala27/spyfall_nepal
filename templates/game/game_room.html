@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-header">
+                <h4>Your Role</h4>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">
+                    {% if player.is_spy %}
+                    <span class="text-danger">Spy</span>
+                    {% else %}
+                    <span class="text-success">{{ player.role }}</span>
+                    {% endif %}
+                </h5>
+                <p>
+                    {% if player.is_spy %}
+                    You are the spy! Try to figure out the location without getting caught.
+                    {% else %}
+                    You are at <strong id="location">{{ player.room.location }}</strong>. Find the spy!
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h4>Players</h4>
+            </div>
+            <ul id="player-list" class="list-group list-group-flush">
+                {% for p in player.room.player_set.all %}
+                <li class="list-group-item">{{ p.name }} - {% if p.is_spy %}Spy{% else %}{{ p.role }}{% endif %}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h4>Chat</h4>
+            </div>
+            <div class="card-body">
+                <div id="chat-box" class="mb-3" style="height: 300px; overflow-y: scroll;"></div>
+                <form id="chat-form">
+                    <input type="hidden" id="player-id" value="{{ player.id }}">
+                    <div class="input-group">
+                        <input type="text" id="message-input" class="form-control" placeholder="Type your message...">
+                        <button type="submit" class="btn btn-red">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block scripts %}
+<script src="{% static 'js/game.js' %}"></script>
+{% endblock %}
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="display-4">Spyfall Nepal</h1>
+    <p class="lead">Can you find the spy among the majestic Himalayas?</p>
+    
+    <div class="row mt-5">
+        <div class="col-md-6 mb-4">
+            <form method="post" action="{% url 'create_room' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-gold btn-lg">Create New Game</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form method="post" action="{% url 'join_room' %}">
+                {% csrf_token %}
+                <div class="input-group">
+                    <input type="text" name="room_code" class="form-control form-control-lg" 
+                           placeholder="Enter Room Code" required>
+                    <button type="submit" class="btn btn-red">Join</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

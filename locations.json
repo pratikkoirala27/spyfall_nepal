@@ -1,0 +1,352 @@
+{
+  "locations": {
+    "Patan Durbar Square": {
+      "people_types": [
+        "Local Tour Guide",
+        "Tourist",
+        "Photographer",
+        "Shopkeeper",
+        "Student",
+        "Monk",
+        "Street Performer",
+        "Local Resident"
+      ]
+    },
+    "Pashupatinath Temple": {
+      "people_types": [
+        "Priest",
+        "Pilgrim",
+        "Sadhu",
+        "Tourist",
+        "Devotee",
+        "Shopkeeper",
+        "Security Guard",
+        "Volunteer"
+      ]
+    },
+    "Lumbini Garden": {
+      "people_types": [
+        "Monk",
+        "Pilgrim",
+        "Tourist",
+        "Historian",
+        "Gardener",
+        "Security Guard",
+        "Guide",
+        "Photographer"
+      ]
+    },
+    "Pokhara Lakeside": {
+      "people_types": [
+        "Boater",
+        "Tourist",
+        "Hotel Staff",
+        "Street Vendor",
+        "Guide",
+        "Shopkeeper",
+        "Musician",
+        "Local Resident"
+      ]
+    },
+    "Sagarmatha National Park": {
+      "people_types": [
+        "Mountaineer",
+        "Sherpa Guide",
+        "Trekker",
+        "Park Ranger",
+        "Porter",
+        "Tea House Owner",
+        "Wildlife Researcher",
+        "Photographer"
+      ]
+    },
+    "Singha Durbar": {
+      "people_types": [
+        "Government Official",
+        "Employee",
+        "Security Personnel",
+        "Visitor",
+        "Journalist",
+        "Technician",
+        "Cleaner",
+        "Driver"
+      ]
+    },
+    "Nepal Telecom Office": {
+      "people_types": [
+        "Employee",
+        "Manager",
+        "Customer",
+        "Technician",
+        "Receptionist",
+        "Security Guard",
+        "Cleaner",
+        "Intern"
+      ]
+    },
+    "Tribhuvan International Airport": {
+      "people_types": [
+        "Passenger",
+        "Pilot",
+        "Flight Attendant",
+        "Security Staff",
+        "Ground Crew",
+        "Immigration Officer",
+        "Taxi Driver",
+        "Shopkeeper"
+      ]
+    },
+    "Tribhuvan University": {
+      "people_types": [
+        "Student",
+        "Professor",
+        "Staff",
+        "Researcher",
+        "Visitor",
+        "Security Guard",
+        "Canteen Worker",
+        "Maintenance Worker"
+      ]
+    },
+    "Pulchowk Engineering Campus": {
+      "people_types": [
+        "Student",
+        "Professor",
+        "Staff",
+        "Researcher",
+        "Visitor",
+        "Security Guard",
+        "Cleaner",
+        "Intern"
+      ]
+    },
+    "Thamel": {
+      "people_types": [
+        "Backpacker",
+        "Shopkeeper",
+        "Tourist",
+        "Hotel Staff",
+        "Guide",
+        "Musician",
+        "Food Vendor",
+        "Taxi Driver"
+      ]
+    },
+    "Garden of Dreams": {
+      "people_types": [
+        "Gardener",
+        "Tourist",
+        "Couple",
+        "Photographer",
+        "Student",
+        "Retiree",
+        "Local Resident",
+        "Event Planner"
+      ]
+    },
+    "Ratna Park": {
+      "people_types": [
+        "Gardener",
+        "Street Vendor",
+        "Student",
+        "Jogger",
+        "Couple",
+        "Child",
+        "Retiree",
+        "Local Resident"
+      ]
+    },
+    "Chobhar Gorge": {
+      "people_types": [
+        "Hiker",
+        "Photographer",
+        "Local Resident",
+        "Tourist",
+        "Guide",
+        "Fisherman",
+        "Researcher",
+        "Student"
+      ]
+    },
+    "Dhulikhel View Point": {
+      "people_types": [
+        "Hiker",
+        "Photographer",
+        "Couple",
+        "Tourist",
+        "Local Resident",
+        "Vendor",
+        "Guide",
+        "Birdwatcher"
+      ]
+    },
+    "Bhaktapur Pottery Square": {
+      "people_types": [
+        "Potter",
+        "Tourist",
+        "Photographer",
+        "Shopkeeper",
+        "Student",
+        "Historian",
+        "Local Resident",
+        "Vendor"
+      ]
+    },
+    "Pokhara International Mountain Museum": {
+      "people_types": [
+        "Visitor",
+        "Tourist",
+        "Guide",
+        "Historian",
+        "School Student",
+        "Teacher",
+        "Curator",
+        "Photographer"
+      ]
+    },
+    "Central Zoo": {
+      "people_types": [
+        "Zoo Keeper",
+        "Visitor",
+        "Family",
+        "Photographer",
+        "School Group",
+        "Guide",
+        "Researcher",
+        "Security Guard"
+      ]
+    },
+    "Itahari Industrial Area": {
+      "people_types": [
+        "Factory Worker",
+        "Engineer",
+        "Supervisor",
+        "Truck Driver",
+        "Manager",
+        "Security Guard",
+        "Cleaner",
+        "Visitor"
+      ]
+    },
+    "Bir Hospital": {
+      "people_types": [
+        "Doctor",
+        "Nurse",
+        "Patient",
+        "Visitor",
+        "Receptionist",
+        "Pharmacist",
+        "Cleaner",
+        "Security Guard"
+      ]
+    },
+    "Pulchowk Café": {
+      "people_types": [
+        "Barista",
+        "Customer",
+        "Student",
+        "Freelancer",
+        "Tourist",
+        "Couple",
+        "Staff",
+        "Musician"
+      ]
+    },
+    "Butwal Bus Park": {
+      "people_types": [
+        "Bus Driver",
+        "Passenger",
+        "Ticket Seller",
+        "Vendor",
+        "Security Guard",
+        "Shopkeeper",
+        "Cleaner",
+        "Local Resident"
+      ]
+    },
+    "Dhorpatan Hunting Reserve": {
+      "people_types": [
+        "Hunter",
+        "Wildlife Ranger",
+        "Guide",
+        "Porter",
+        "Photographer",
+        "Local Villager",
+        "Conservationist",
+        "Cook"
+      ]
+    },
+    "Koshi Tappu Wildlife Reserve": {
+      "people_types": [
+        "Wildlife Researcher",
+        "Birdwatcher",
+        "Tourist",
+        "Park Ranger",
+        "Photographer",
+        "Local Fisherman",
+        "Guide",
+        "Conservation Volunteer"
+      ]
+    },
+    "Tea Garden in Ilam": {
+      "people_types": [
+        "Tea Plucker",
+        "Supervisor",
+        "Factory Worker",
+        "Tea Taster",
+        "Tourist",
+        "Photographer",
+        "Researcher",
+        "Local Villager"
+      ]
+    },
+    "Remote Village in Mustang": {
+      "people_types": [
+        "Farmer",
+        "Yak Herder",
+        "Monk",
+        "Teacher",
+        "Student",
+        "Trekker",
+        "Photographer",
+        "Local Elder"
+      ]
+    },
+    "Kathmandu Tech Hub": {
+      "people_types": [
+        "Startup Founder",
+        "Software Developer",
+        "Designer",
+        "Investor",
+        "Freelancer",
+        "Intern",
+        "Receptionist",
+        "Mentor"
+      ]
+    },
+    "Bhaktapur Farmer's Market": {
+      "people_types": [
+        "Farmer",
+        "Vendor",
+        "Customer",
+        "Local Resident",
+        "Child",
+        "Delivery Driver",
+        "Security Guard",
+        "Shopkeeper"
+      ]
+    },
+    "Organic Farm in Chitwan": {
+      "people_types": [
+        "Farmer",
+        "Farm Manager",
+        "Agricultural Researcher",
+        "Volunteer",
+        "Tourist",
+        "Student",
+        "Local Resident",
+        "Driver"
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <div class="card-header text-center">
+        <h2>Game Lobby: {{ room_code }}</h2>
+    </div>
+    <div class="card-body">
+        <h4>Players:</h4>
+        <ul id="player-list" class="list-group mb-3">
+            {% for player in players %}
+            <li class="list-group-item">{{ player.name }}</li>
+            {% endfor %}
+        </ul>
+        <button id="start-game" class="btn btn-gold">Start Game</button>
+    </div>
+</div>
+
+{% block scripts %}
+<script>
+    const roomCode = "{{ room_code }}";
+    const socket = new WebSocket(`ws://${window.location.host}/ws/game/${roomCode}/`);
+    
+    socket.onmessage = function(e) {
+        const data = JSON.parse(e.data);
+        if (data.type === 'player_list') {
+            updatePlayerList(data.players);
+        } else if (data.type === 'game_started') {
+            window.location.href = "{% url 'game_room' room_code %}";
+        }
+    };
+    
+    function updatePlayerList(players) {
+        const playerList = document.getElementById('player-list');
+        playerList.innerHTML = '';
+        players.forEach(player => {
+            const item = document.createElement('li');
+            item.className = 'list-group-item';
+            item.textContent = player.name;
+            playerList.appendChild(item);
+        });
+    }
+    
+    document.getElementById('start-game').addEventListener('click', function() {
+        socket.send(JSON.stringify({
+            type: 'start_game'
+        }));
+    });
+    
+    // Notify that a new player joined
+    socket.onopen = function() {
+        socket.send(JSON.stringify({
+            type: 'player_joined'
+        }));
+    };
+</script>
+{% endblock %}
+{% endblock %}

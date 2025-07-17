@@ -1,0 +1,52 @@
+:root {
+    --nepal-red: #DC143C;
+    --nepal-gold: #FFD700;
+    --nepal-blue: #1E90FF;
+    --mountain-dark: #2E8B57;
+    --mountain-light: #3CB371;
+}
+
+.nepal-theme {
+    background: linear-gradient(to bottom, #1E90FF, #87CEEB);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nepal-theme::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, var(--mountain-dark), var(--mountain-light));
+    clip-path: polygon(0% 100%, 100% 100%, 100% 20%, 80% 40%, 60% 20%, 40% 50%, 20% 30%, 0% 60%);
+    z-index: -1;
+}
+
+.btn-red {
+    background-color: var(--nepal-red);
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: #b01030;
+    color: white;
+}
+
+.btn-gold {
+    background-color: var(--nepal-gold);
+    color: #333;
+}
+
+.btn-gold:hover {
+    background-color: #e6c200;
+    color: #333;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
